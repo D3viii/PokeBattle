@@ -1,69 +1,42 @@
 {{!-- Container to generate pokemon --}}
+<audio volume="0.05" autoplay>
+  <source src="/assets/mp3/pokemon.mp3" type="audio/mpeg">
+  <source src="/assets/mp3/pokemon.ogg" type="audio/ogg">
+</audio>
 <br>
-<div class="grid-container">
- <div class="row">
-  <div class="columns medium-5">
-    {{!-- Card 1 User Input --}}
-    <div class="card"> 
-        <div class="card-section" id="card-user-One">
-          
+<div class="grid-container"  id="generate-div">
+ 
+  <div class="row">
+    <div class="columns medium-5">
+      {{!-- Card 1 User Input --}}
+      <div class="card">
+        <div class="card-section" id="card-userOne">
+
         </div>
-    </div>      
-  </div>
-  <div class="columns medium-2">
-    <img id="vs"src="/assets/img/Vs-image.png"></img>
-  </div>
-  <div class="columns medium-5">
-    {{!-- Card 2 User Input --}}
-    <div class="card">       
-        <div class="card-section" id="card-user-Two">
-         
+      </div>
+    </div>
+    <div class="columns medium-2">
+      <img id="vs" src="/assets/img/Vs-image.png"></img>
+    </div>
+    <div class="columns medium-5">
+      {{!-- Card 2 User Input --}}
+      <div class="card">
+        <div class="card-section" id="card-userTwo">
+
         </div>
-     </div>  
+      </div>
+    </div>
   </div>
-</div>
-{{!-- br will be deleted --}}
-<br>
+  {{!-- br will be deleted --}}
+  <br>
 
 
-        <br>
+  <br>
+  <div id="submit-block">
+    <img alt="pokemon ball" src="/assets/img/pokemon-ball.png" class="pokeBall" id="goResultsPage"></img>
 
- <a href="/results"><img alt="pokemon ball" src="/assets/img/pokemon-ball.png" class="pokeBall"></img></a> 
-        {{!-- <div class="card" style="width: 300px;">
-      {{#each pokemons}}
-  <div class="card-divider">
-      {{dataValues.pokemonName}}
   </div>
-    
-  <img src={{dataValues.image}} alt={{dataValues.pokemonName}} style="width: 10%" >
-  <div class="card-section">
-    <h4>{{dataValues.pokemonName}}</h4>
-    <ul>
-    <li>ID: {{dataValues.id}}</li>
-    <li>Type: {{dataValues.type}}</li>
-    </ul>
-    {{/each}}
-  </div>
-</div>
-
-<div class="card" style="width: 300px;">
-     {{#each pokemons}}
-  <div class="card-divider">
-      {{dataValues.pokemonName}}
-  </div>
-    
-   
-  <img src={{dataValues.image}} alt={{dataValues.pokemonName}} style="width: 10%" >
-  <div class="card-section">
-    <h4>{{dataValues.pokemonName}}</h4>
-    <ul>
-    <li>ID: {{dataValues.id}}</li>
-    <li>Type: {{dataValues.type}}</li>
-    </ul>
-    {{/each}}
-  </div>
-</div> --}}
-
-
-  
-      
+  {{!-- <audio autoplay>
+    <source src="/assets/mp3/pokemon.mp3" type="audio/mpeg">
+    <source src="/assets/mp3/pokemon.ogg" type="audio/ogg">
+  </audio> --}}
